@@ -1,5 +1,5 @@
 {
-  "name": "@binsee/protobufjs",
+  "name": "@juzi/protobufjs",
   "version": "7.1.1",
   "versionScheme": "~",
   "description": "Protocol Buffers for JavaScript (& TypeScript).",
