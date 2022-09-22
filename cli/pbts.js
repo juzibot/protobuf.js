@@ -170,7 +170,6 @@ exports.main = function(args, callback) {
                     output.push("import * as " + key + " from \"" + imports[key] + "\";");
                 });
 
-                output.push("import Long = require(\"long\");");
             }
 
             output = output.join("\n") + "\n" + out.join("");
