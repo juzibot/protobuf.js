@@ -20,13 +20,13 @@ function LongBits(lo, hi) {
      * Low bits.
      * @type {number}
      */
-    this.lo = lo | 0;
+    this.lo = lo;
 
     /**
      * High bits.
      * @type {number}
      */
-    this.hi = hi | 0;
+    this.hi = hi;
 }
 
 /**
@@ -56,8 +56,8 @@ LongBits.fromBigInt = function fromNumber(value) {
     if (negative) {
         value = -value;
     }
-    var hi = Number(value >> 32n) | 0;
-    var lo = Number(value - ( BigInt(hi) << 32n ) ) | 0;
+    var hi = Number(value >> 32n);
+    var lo = Number(value - ( BigInt(hi) << 32n ) );
 
     if (negative) {
         hi = ~hi >>> 0;
