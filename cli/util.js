@@ -147,8 +147,7 @@ function dfsFilterMessageDependencies(root, message, filterMap, flatMap) {
                     continue;
                 }
                 var packageName = field.resolvedType.parent.name;
-                var typeName = field.resolvedType.name;
-                var fullName = packageName ? `${packageName}.${typeName}` : typeName;
+                var fullName = field.resolvedType.fullName.replace(/^\./, '');
                 doFilterMessage(root, { messageNames: [fullName] }, filterMap, flatMap, packageName);
             }
         }
