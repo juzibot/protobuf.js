@@ -1,7 +1,7 @@
 {
   "name": "@juzi/protobufjs-cli",
   "description": "Translates between file formats and generates static code as well as TypeScript definitions.",
-  "version": "1.1.1-alpha.3",
+  "version": "1.1.1-alpha.4",
   "author": "Daniel Wirtz <dcode+protobufjs@dcode.io>",
   "repository": {
     "type": "git",
